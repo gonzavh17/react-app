@@ -1,0 +1,33 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding: 5px 5%;
+    border-bottom: solid 1px #000;
+}
+
+.nav-bar{
+    display: flex;
+}
+
+.nav-bar-elemet{
+    padding: 10px;
+    margin: 3px;
+    color: #000;
+    transition: 500ms;
+}
+
+.brand{
+    cursor: pointer;
+}
+
+.cart{
+    font-size: 20px;
+    cursor: pointer;
+}
