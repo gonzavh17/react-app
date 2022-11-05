@@ -9,6 +9,7 @@ import GalaxyS from "./components/Categories/GalaxyS";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Cart from "./components/Cart/Cart";
 import Brand from "./components/Brand/Brand";
+import Item from "./components/Card/Item/Item";
 import {
   BrowserRouter as Router,
   Routes,
@@ -43,6 +44,7 @@ function App() {
         <Route path="/AboutUs" element={<AboutUs/>}></Route>
         <Route path="/Cart" element={<Cart/>}></Route>
         <Route path="/Brand" element={<Brand/>}></Route>
+        <Route path="/Item" element={<Item />}></Route>
       </Routes>
     </BrowserRouter>
   );
