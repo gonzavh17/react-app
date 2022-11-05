@@ -16,6 +16,10 @@
     display: flex;
 }
 
+.brand{
+    color: #000;
+}
+
 .nav-bar-elemet{
     padding: 10px;
     margin: 3px;
@@ -23,9 +27,6 @@
     transition: 500ms;
 }
 
-.brand{
-    cursor: pointer;
-}
 
 .cart{
     font-size: 20px;

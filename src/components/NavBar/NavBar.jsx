@@ -1,27 +1,33 @@
-import React from 'react'
-import "./NavBar.css"
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCartShopping} from '@fortawesome/free-solid-svg-icons'
+import React from "react";
+import "./NavBar.css";
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
+import CartWidget from "../CartWidget/CartWidget";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  BrowserRouter,
+} from "react-router-dom";
 
 function NavBar() {
   return (
-    <div className='container'>
-      <div className='brand'>
-          Samsung Shop
-        </div>
-
-      <div className='nav-bar'>
-        <a className='nav-bar-elemet' href="#">Menu</a>
-        <a className='nav-bar-elemet' href="#">Products</a>
-        <a className='nav-bar-elemet' href="#">Sale</a>
-        <a className='nav-bar-elemet' href="#">Contact</a>
+    <div className="container">
+      <div>
+        <Link to="/Brand">
+          <li className="brand">Samsung Shop</li>
+        </Link>
       </div>
 
-      <div className='cart'>
-      <FontAwesomeIcon icon={faCartShopping} />
+      <div>
+        <ItemListContainer />
+      </div>
+
+      <div>
+        <CartWidget />
       </div>
     </div>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;
